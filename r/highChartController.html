@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HighCHart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+
+<button ng-click="choose('bar','container',[1,2,3,4,5,6])" type="button" class="btn btn-dark">Bar chart</button>
+<button ng-click="choose('pie','container',[4,5,6,4,5,6])" type="button" class="btn btn-dark">pie chart</button>
+<button ng-click="choose('line','container',[4,54,36,234,5,6])" type="button" class="btn btn-dark">line chart</button>
+<button ng-click="choose('scatter','container',[4.5,54.7,36.7,234,5,6])" type="button" class="btn btn-dark">Scatter
+    chart
+</button>
+<button ng-click="choose('areaspline','container',[4.5,54.7,36.7,24.5,5,6])" type="button" class="btn btn-dark">
+    Areaspline chart
+</button>
+<figure class="highcharts-figure">
+    <div id="container"></div>
+</figure>
+
+</body>
+</html>
